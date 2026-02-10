@@ -14,41 +14,73 @@ PURPOSE: * Creating hierarchical data using nested lists.
 		<title></title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+			table, th, td {
+				border: 1px, solid, black;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
+			<!-- 8.1: Hierarchical data using nested lists -->
 			<ul>
 				<li>
 					Vehicle <ul>
 						<li>
 							Car <ul>
-								<li>
-									Petrol
-								</li>
-								<li>
-									Diesel
-								</li>
-								<li>
-									Electric
-								</li>
+								<li>Petrol</li>
+								<li>Diesel</li>
+								<li>Electric</li>
 							</ul>
 						</li>
-						<li>Bike<ul>
-								<li>
-									Petrol
-								</li>
-								<li>
-									Diesel
-								</li>
-								<li>
-									Electric
-								</li>
-							</ul></li>
+						<li>
+							Bike<ul>
+								<li>Petrol</li>
+								<li>Diesel</li>
+								<li>Electric</li>
+							</ul>
+						</li>
 					</ul>
 				</li>
 			</ul>
+
+
 			<form>
-				Name: <input type="text" name="name"><br>
+				<!-- 8.2: Creating forms using input elements -->
+				Name: <input type="text" name="name"><br><br>
+
+                <!-- 8.3: Create selectable form inputs -->
+				Gender:
+				<input type="radio" name="gender">
+				Male
+				<input type="radio" name="gender">
+				Female
+				<br><br>
+
+				<!-- 8.3: For collecting long text input -->
+				Address:<br>
+				<textarea></textarea>
+				<br><br>
+
+				<!-- 8.4: To integrate tables inside forms -->
+				<table>
+					<tr>
+						<th>S/no.</th>
+						<th>Name</th>
+						<th>Roll No.</th>
+					</tr>
+					<tr>
+						<td>1.</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+				</table>
 			</form>
 		</main>
 	</body>
