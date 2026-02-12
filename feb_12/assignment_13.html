@@ -1,0 +1,36 @@
+<!--
+DATE: 12 Feb 2026
+ASSIGNMENT: #13
+PURPOSE: Design a webpage:
+         * Applying a background image.
+         * Use background-repeat, position, and size.
+         * Create a semi-transparent content box over the image.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Assignment 13</title>
+		<style>
+			body {
+				background-image: url("images.jpg");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			
+			.content-box {
+				background-color: rgba(255, 255, 255, 0.4); /* rgba(red, green, blue, transparency) */
+				border-radius: 10px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content-box">
+			<p>Placeholder text</p>
+		</div>
+	</body>
+</html>

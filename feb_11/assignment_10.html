@@ -2,6 +2,8 @@
 DATE: 11 Feb 2026
 ASSIGNMENT: #10
 PURPOSE: Create a webpage containing - A heading, Two paragraphs, One unordered list.
+		 Applying inline, internal, and external CSS.
+		 Using element, class, and ID selectors.
 -->
 
 <!DOCTYPE html>
@@ -12,25 +14,34 @@ PURPOSE: Create a webpage containing - A heading, Two paragraphs, One unordered 
 		<title>Assignment 10</title>
 		<!-- Internal CSS -->
 		<style>
-		  p {
-			color: blue;
-		  }
+			/* Using ID selector */
+			#firstPara {
+				color: blue;
+			}
+			
+			/* Using Class selector */
+			.secondPara {
+				color: red
+			}
 		</style>
 		<!-- External CSS -->
 		<link rel="stylesheet" href="assignment_10.css">
 	</head>
 	<body>
-		<!-- Heading using inline CSS-->
+		<!-- Heading -->
+		<!-- Inline CSS -->
 		<h1 style="text-align: center;">Assam Engineering College</h1>
 
 		<!-- Paragraph 1 -->
-		<p>
+		<p id="firstPara">
 			Assam Engineering College was established in 1955, the first
 			undergraduate engineering college in North-Eastern India.
 		</p>
 
 		<!-- Paragraph 2 -->
-		<p>Assam Engineering College houses the following departments:</p>
+		<p class="secondPara">
+			Assam Engineering College houses the following departments:
+		</p>
 
 		<!-- Unordered lists -->
 		<ul>
