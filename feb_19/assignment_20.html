@@ -1,0 +1,88 @@
+<!-- 
+DATE: 19 Feb 2026
+ASSIGNMENT: 20
+PURPOSE: Creating an image gallery having
+         - images arranged in grid
+         - zoom effect on hover
+         - smooth transition animation
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Image Gallery</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: Arial, sans-serif;
+			}
+			
+			body {
+				background: #f4f4f4;
+				padding: 40px;
+			}
+			
+			/* Gallery Grid */
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 20px;
+			}
+			
+			/* Image Container */
+			.gallery-item {
+				overflow: hidden;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			}
+			
+			/* Images */
+			.gallery-item img {
+				width: 100%;
+				display: block;
+				transition: transform 0.4s ease-in-out;
+			}
+			
+			/* Zoom Effect */
+			.gallery-item:hover img {
+				transform: scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+
+		<h2 style="text-align:center; margin-bottom:30px;">Image Gallery</h2>
+
+		<div class="gallery">
+
+			<div class="gallery-item">
+				<img src="https://picsum.photos/400/300?random=1" alt="Gallery Image">
+			</div>
+
+			<div class="gallery-item">
+				<img src="https://picsum.photos/400/300?random=2" alt="Gallery Image">
+			</div>
+
+			<div class="gallery-item">
+				<img src="https://picsum.photos/400/300?random=3" alt="Gallery Image">
+			</div>
+
+			<div class="gallery-item">
+				<img src="https://picsum.photos/400/300?random=4" alt="Gallery Image">
+			</div>
+
+			<div class="gallery-item">
+				<img src="https://picsum.photos/400/300?random=5" alt="Gallery Image">
+			</div>
+
+			<div class="gallery-item">
+				<img src="https://picsum.photos/400/300?random=6" alt="Gallery Image">
+			</div>
+		</div>
+	</body>
+</html>
